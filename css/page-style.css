@@ -1,0 +1,128 @@
+* {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: 2px solid red; */
+    --primary-col: #EF798A;
+    --secondary-col: #E5C3D1;
+    --heading-col: #280004;
+    --heading-hov: #000000;
+    --hover-prim: #03F7EB;
+    --hover-sec: #F0F66E;
+}
+
+body {
+    margin: 0 20px;
+    padding: 0;
+    background: linear-gradient(45deg, var(--primary-col), var(--secondary-col));
+}
+
+h2 {
+    margin: 10px;
+    font-size: 2rem;
+    color: var(--heading-col);
+    text-align: left;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto auto;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.main-title {
+    font-size: 4rem;
+    color: var(--heading-col);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-title:hover {
+    text-decoration: underline;
+    transition: text-decoration 1s ease;
+}
+
+.info  {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.ingredients {
+    list-style-type: square;
+}
+
+.para {
+    margin: 20px 4px;
+}
+
+.desc {
+    margin: 2rem;
+}
+
+img:hover {
+    border: 5px solid var(--heading-col);
+}
+
+.back-btn-container {
+    margin: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    padding: 15px 34px;
+    margin: 4px 2px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 10px grey;
+    font-weight: normal;
+    border: 2px solid #ddd6f3;
+}
+
+.btn:hover {
+    box-shadow: inset 0px 0px 10px gray, 5px 5px 5px var(--hover-prim), -5px -5px 5px var(--hover-sec);
+    transition: box-shadow 0.3s ease-out;
+    border: 2px solid black;
+    transition: border 0.3s ease-out;
+}
+
+.empty {
+    width: 100vw;
+    height: 50px;
+}
+
+
+.top-btn {
+    display: inline-block;
+    background-color: white;
+    padding: 15px 54px;
+    margin: 4px 2px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 10px grey;
+    font-weight: normal;
+    border: 2px solid #ddd6f3;
+}
+
+.top-btn:hover {
+    box-shadow: inset 0px 0px 10px gray, 5px 5px 5px var(--hover-prim), -5px -5px 5px var(--hover-sec);
+    transition: box-shadow 0.3s ease-out;
+    border: 2px solid black;
+    transition: border 0.3s ease-out;
+}
+
+.top-btn-box {
+    display: flex;
+    justify-content: center;
+}
